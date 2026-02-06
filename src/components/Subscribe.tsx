@@ -67,8 +67,17 @@ export default function Subscribe() {
                 {status === 'loading' ? "..." : status === 'success' ? "✓" : "Subscribe"}
 
                </button>
-
             </form>
+
+            {status === "success" && (
+                <p className="text-green-500 text-sm mt-2">Thanks for subscribing!</p>
+            )}
+
+            {
+               status === "error" && (
+                   <p className="text-red-500 text-sm mt-2">Please enter a valid email.</p>
+               )
+            }
 
             
            
