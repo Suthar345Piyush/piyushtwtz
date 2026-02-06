@@ -1,4 +1,8 @@
-// skills section to shown on the page  
+// skills section to shown on the page 
+
+'use client';
+
+
 
 import {motion} from "framer-motion";
 import { skills } from "@/data/skills";

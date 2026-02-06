@@ -1,5 +1,9 @@
 // work experience section here 
 
+'use client';
+
+
+
 import {motion} from "framer-motion";
 import { workExperience } from "@/data/work";
 
@@ -20,6 +24,33 @@ export default function WorkExperience () {
          {workExperience.map((exp , index) => (
 
           <motion.div key={exp.id} initial={{opacity : 0, x : -20}} animate={{opacity : 1 , x : 0}} transition={{duration : 0.3 , delay : 0.3 + index * 0.1}} className="flex items-center justify-between group">
+
+
+            <div className="flex items-center gap-4">
+
+              <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl font-bold">
+
+                 {exp.company.charAt(0).toUpperCase()}
+
+              </div>
+
+
+              <div>
+                   <h3 className="font-semibold text-white group hover:text-gray-300 transition-colors">{exp.company}</h3>
+
+             <p className="text-sm text-gray-400">
+                 {exp.position} | {exp.type}
+                  </p>
+              </div>
+
+            </div>
+
+
+            <div className="text-right text-sm text-gray-400">
+              {exp.startDate} - {exp.endDate}
+            </div>
+
+          
 
           </motion.div>
 
