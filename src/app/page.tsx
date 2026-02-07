@@ -2,7 +2,7 @@
 
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import WorkExperience from "@/components/WorkExperience";
+import  WorkExperience  from "@/components/WorkExperience";
 import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Skills from "@/components/Skills";
