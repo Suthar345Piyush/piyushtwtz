@@ -11,6 +11,7 @@ export const workExperience : WorkExperience[] = [
     type : "",
     startDate : "october 2025",
     endDate : "october 2025",
+    logo : "",
    }
 ];
 
