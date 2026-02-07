@@ -16,7 +16,7 @@ export default function Education() {
 
        <motion.section initial={{opacity : 0 , y : 20}} animate={{opacity : 1 , y : 0}} transition={{duration : 0.5  , delay : 0.4}} className="mb-16">
 
-          <h2 className="text-3xl font-bold mb-6">education</h2>
+          <h2 className="text-3xl font-bold mb-6">education/.</h2>
 
 
           <div>
@@ -42,11 +42,11 @@ export default function Education() {
 
                   <div>
 
-                    <h3 className="text-white font-semibold">
+                    <h3 className="text-black font-semibold text-lg">
                       {educ.institution}
                     </h3>
 
-                    <p className="text-sm text-gray-400">{educ.field}</p>
+                    <p className="text-sm text-gray-700">{educ.field}</p>
 
 
 
@@ -56,7 +56,7 @@ export default function Education() {
 
                 {/* education timeperiod  */}
 
-                <div className="text-right text-sm text-gray-400">
+                <div className="text-right text-sm text-gray-700">
                   {educ.startDate} - {educ.endDate}{" "}
                   {educ.status && <span>({educ.status})</span>}
                 </div>
