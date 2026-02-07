@@ -15,7 +15,7 @@ export default function Home() {
 
     return (
 
-        <main className="min-h-screen bg-black transition-colors">
+        <main className="min-h-screen bg-orange-300 transition-colors">
 
 
           <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
