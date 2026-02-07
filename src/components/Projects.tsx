@@ -17,7 +17,7 @@ export default function Projects() {
          <motion.section initial={{opacity : 0 , y : 20}} animate={{opacity : 1 , y : 0}} transition={{duration : 0.5 , delay : 0.3}} className="mb-16">
 
 
-          <h2 className="text-3xl font-bold mb-6">projects</h2>
+          <h2 className="text-3xl font-bold mb-6">projects/.</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
@@ -30,12 +30,11 @@ export default function Projects() {
 
                    <div className="flex items-start justify-between mb-3">
 
-                    <h3 className="text-xl font-semibold text-white group-hover:text-gray-300 transition-colors">
+                    <h3 className="text-xl font-semibold text-black group-hover:text-gray-800 transition-colors">
 
                        {project.title}
  
                     </h3>
-
                     <span className="text-xs text-gray-500">{project.date}</span>
                     </div>
 
@@ -48,7 +47,7 @@ export default function Projects() {
                   {
                      project.tech.map((tech) => (
 
-                        <span key={tech} className="px-3 py-1 bg-gray-800/50 text-gray-300 text-xs rounded-full border border-gray-700">
+                        <span key={tech} className="px-3 py-1 bg-black text-white text-xs rounded-full border border-gray-700">
 
                            {tech}
 
@@ -67,7 +66,7 @@ export default function Projects() {
                   {
                    project.github && (
 
-                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors items-center gap-2 text-sm">
+                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black transition-colors items-center gap-2 text-sm">
                        
                         <FiGithub size={16}/>Code
 
@@ -78,7 +77,7 @@ export default function Projects() {
                   {
                     project.live && (
                         
-                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors items-center gap-2 text-sm">
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black transition-colors items-center gap-2 text-sm">
 
                         <FiExternalLink size={16}/>
                         Live Demo

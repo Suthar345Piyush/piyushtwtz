@@ -15,5 +15,6 @@ export const skills : string[] = [
    "mern",
    "tailwindcss",
    "tamagui",
-   "git"
+   "git",
+   "materialUi"
 ];
