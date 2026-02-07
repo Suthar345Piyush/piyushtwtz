@@ -41,7 +41,7 @@ export default function WorkExperience  ()  {
                    <h3 className="font-semibold text-black group hover:text-black transition-colors">{exp.company}</h3>
 
              <p className="text-sm text-black">
-                 {exp.position} 
+                 {exp.position} | {exp.type}
                   </p>
               </div>
 
