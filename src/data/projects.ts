@@ -1,7 +1,12 @@
 // project data here 
 
 import { Project } from "@/types";
-
+import gifhubimage from "../../public/images/gifhub.png";
+import chessimage from "../../public/images/gifhub.png";
+import colliderimage from "../../public/images/gifhub.png";
+import taskifyimage from "../../public/images/gifhub.png";
+import ezyqimage from "../../public/images/gifhub.png";
+import securechatimage from "../../public/images/gifhub.png";
 
 export const projects : Project[] = [
 
@@ -11,6 +16,7 @@ export const projects : Project[] = [
      description : "a frontend gif's website built using giphy api",
      tech : ["reactjs" , "javascript" , "react-router-dom" , "tailwindcss" , "giphy api"],
      github : "https://github.com/Suthar345Piyush/GIFHub-Gifs-App",
+     image : gifhubimage,
      live : "https://gif-hub-gifs-app.vercel.app/",
      date : "2024"
    },
@@ -22,6 +28,7 @@ export const projects : Project[] = [
     description : "a todo mobile app",
     tech : ["react native" , "typescript" ,  "expo" , "convex" , "sentry" , "vanilla css"],
     github : "https://github.com/Suthar345Piyush/Taskify",
+    image : taskifyimage,
     date : "2025"
   },
 
@@ -31,6 +38,7 @@ export const projects : Project[] = [
     description : "a queue management mobile app built for user's & business's to manage queue's efficiently",
     tech : ["react native" , "expo" , "react navigation" , "tamagui" , "typescript" , "expo-sqlite" , "zod" , "zustand"],
     github : "https://github.com/Suthar345Piyush/ezyQ",
+    image : ezyqimage,
     date : "2026"
   },
 
@@ -41,6 +49,7 @@ export const projects : Project[] = [
     description : "developed robust backend of chess game , used websockets for real-time player sync",
     tech : ["nodejs" , "expressjs" , "socketio" , "vanilla css"],
     github : "https://github.com/Suthar345Piyush/Chess-Backend",
+    image : chessimage,
     live : "https://chess-backend-4spp.onrender.com/",
     date : "2025"
   },
@@ -52,6 +61,7 @@ export const projects : Project[] = [
     description : "a fun physics based project , where you can make collisions b/w particles and study their related metrics , developed for physics geeks",
     tech : ["reactjs" , "typescript" , "tailwindcss" , "recharts" , "canvasapi"],
     github : "https://github.com/Suthar345Piyush/collider",
+    image : colliderimage,
     live : "https://collider-app.vercel.app/",
     date : "2025"
   },
@@ -63,6 +73,7 @@ export const projects : Project[] = [
     description : "a very secure chat app with room time limit of 10 mins , room will automatically closed after 10 mins and all chat are permanently cleared",
     tech : ["nextjs16" , "typescript" , "upstash realtime" , "redis" , "tanstackquery" , "zod" , "elysiajs" , "tailwindcss"],
     github : "https://github.com/Suthar345Piyush/secure_chat",
+    image : securechatimage,
     live : "https://securechat-blue.vercel.app/",
     date : "2025"
   },
