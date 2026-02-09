@@ -8,6 +8,7 @@
 import {motion} from "framer-motion";
 import { projects } from "@/data/projects";
 import { FiGithub , FiExternalLink } from "react-icons/fi";
+import Image from "next/image";
 
 
 export default function Projects() {
@@ -26,7 +27,13 @@ export default function Projects() {
                  <motion.div key={project.id} initial={{opacity : 0 , y : 20}} animate = {{opacity : 1 , y : 0}} transition={{duration : 0.3 , delay : 0.4 + index * 0.1}} 
                  className="border border-gray-800 rounded-lg p-6 hover:border-gray-700 transition-all hover:shadow-lg hover:shadow-gray-900/50 group">
 
-                   
+
+
+                   <div>
+
+                   <Image src={project.image} alt="ProjectImage" width={50} height={35} className="object-cover w-96 h-56 rounded-xl" priority/>
+
+                   </div>
 
                    <div className="flex items-start justify-between mb-3">
 
