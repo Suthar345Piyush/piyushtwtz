@@ -2,11 +2,11 @@
 
 import { Project } from "@/types";
 import gifhubimage from "../../public/images/gifhub.png";
-import chessimage from "../../public/images/gifhub.png";
-import colliderimage from "../../public/images/gifhub.png";
-import taskifyimage from "../../public/images/gifhub.png";
-import ezyqimage from "../../public/images/gifhub.png";
-import securechatimage from "../../public/images/gifhub.png";
+import chessimage from "../../public/images/chessimage.png";
+import colliderimage from "../../public/images/colliderimage.png";
+import taskifyimage from "../../public/images/taskifyimage.png";
+import ezyqimage from "../../public/images/ezyqimage.png";
+import securechatimage from "../../public/images/securechatimage.png";
 
 export const projects : Project[] = [
 
