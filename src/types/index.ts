@@ -6,7 +6,7 @@ export interface Project {
     tech : string[];
     github? : string;
     live? : string;
-    image? : string;
+    image? : string | any;
     date : string;
 };
 
