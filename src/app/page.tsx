@@ -8,6 +8,7 @@ import Education from "@/components/Education";
 import Skills from "@/components/Skills";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer";
+import Quote from "@/components/Quote";
 
 
 
@@ -22,6 +23,7 @@ export default function Home() {
 
             <Hero />
             <About />
+            <Quote />
             <WorkExperience />
             <Projects />
             <Education />
