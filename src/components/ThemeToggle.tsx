@@ -6,19 +6,24 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 export default function ThemeToggle() {
+
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
-  // useEffect only runs on the client, so now we can safely show the UI
+  
+
   useEffect(() => {
     setMounted(true);
   }, []);
+
 
   if (!mounted) {
     return (
       <div className="w-10 h-10 rounded-full bg-gray-800 dark:bg-gray-700" />
     );
   }
+
+
 
   return (
     <motion.button
@@ -30,9 +35,13 @@ export default function ThemeToggle() {
       aria-label="Toggle theme"
     >
       {theme === "dark" ? (
+
         <FiSun className="w-5 h-5 text-yellow-400" />
+
       ) : (
+
         <FiMoon className="w-5 h-5 text-gray-300" />
+        
       )}
     </motion.button>
   );

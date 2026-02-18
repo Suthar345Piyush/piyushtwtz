@@ -5,6 +5,7 @@
 
 import {motion} from 'framer-motion';
 import Image from "next/image";
+import ThemeToggle from './ThemeToggle';
 
 
 
@@ -27,6 +28,10 @@ export default function Hero() {
 
                   <Image src="/images/profile.jpg" alt="Profile" width={160} height={160} className='object-cover w-full h-full' priority/>
                    
+               </div>
+
+               <div className="">
+                   {<ThemeToggle />}
                </div>
 
             </motion.div>
