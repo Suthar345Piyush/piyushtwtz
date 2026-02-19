@@ -35,9 +35,9 @@ export default function Footer() {
 
           <div className="text-center mb-6">
 
-            <p className="text-black mb-2">say hello on/.</p>
+            <p className="text-white mb-2">say hello on/.</p>
 
-            <a href="https://x.com/piyushtwtz" target="_blank" rel="noopener noreferrer" className="text-black hover:text-black transition-colors underline font-bold">X</a>
+            <a href="https://x.com/piyushtwtz" target="_blank" rel="noopener noreferrer" className="text-white transition-colors underline font-bold">X</a>
 
 
           </div>
@@ -57,7 +57,7 @@ export default function Footer() {
                  initial={{opacity : 0 , y : 0}} 
                  animate={{opacity : 1 , y : 0}} 
                  transition={{duration : 0.3 ,  delay : 0.8 + index * 0.05}}
-                 className="text-black hover:text-black transition-colors"
+                 className="text-white hover:text-white transition-colors"
                  aria-label={link.label}
 
                   >
