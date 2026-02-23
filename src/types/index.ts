@@ -33,7 +33,7 @@ export interface WorkExperience {
    type : string;
    startDate : string;
    endDate : string;
-   logo? : string;
+   logo : string;
 };
 
 

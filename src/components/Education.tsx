@@ -6,6 +6,7 @@
 
 import {motion} from "framer-motion";
 import { education } from "@/data/education";
+import Image from "next/image";
 
 
 
@@ -35,7 +36,7 @@ export default function Education() {
 
                   <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center">
 
-                    <span className="text-xl">🎓</span>
+                    <Image  src="/images/collegePhoto.jpg" alt="CollegePhoto" width={11} height={11} className="w-12 h-12 rounded-full" priority/>
 
                   </div>
 

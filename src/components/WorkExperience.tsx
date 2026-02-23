@@ -6,6 +6,7 @@
 
 import {motion} from "framer-motion";
 import { workExperience } from "@/data/work";
+import Image from "next/image";
 
 
 
@@ -31,8 +32,8 @@ export default function WorkExperience  ()  {
             <div className="flex items-center gap-4">
 
               <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl font-bold text-white">
-
-                 {exp.company.charAt(0).toUpperCase()}
+                
+                  <Image src={exp.logo} alt="CompanyImage" width={11} height={11} className="w-12 h-12 rounded-full" priority/>
 
               </div>
 
