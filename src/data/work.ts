@@ -3,6 +3,7 @@
 import { WorkExperience } from "@/types";
 
 
+
 export const workExperience : WorkExperience[] = [
    {
     id : 1,
@@ -11,7 +12,7 @@ export const workExperience : WorkExperience[] = [
     type : "intern",
     startDate : "feb 2026",
     endDate : "present",
-    logo : "",
+    logo :   "/images/inrealphoto.jpg",
    },
 
 
@@ -22,7 +23,7 @@ export const workExperience : WorkExperience[] = [
       type : "part-time",
       startDate : "october 2025",
       endDate : "october 2025",
-      logo : "",
+      logo : "/images/hacktoberfestlogo.jpg",
      }
 ];
 
