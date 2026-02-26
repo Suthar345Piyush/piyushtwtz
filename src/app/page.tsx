@@ -9,6 +9,7 @@ import Skills from "@/components/Skills";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer";
 import Quote from "@/components/Quote";
+import GithubActivityMap from "@/components/GithubActivityMap";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
             <Quote />
             <WorkExperience />
             <Projects />
+            <GithubActivityMap />
             <Education />
             <Subscribe />
             <Skills />
