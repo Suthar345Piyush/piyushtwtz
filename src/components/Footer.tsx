@@ -57,7 +57,7 @@ export default function Footer() {
                  initial={{opacity : 0 , y : 0}} 
                  animate={{opacity : 1 , y : 0}} 
                  transition={{duration : 0.3 ,  delay : 0.8 + index * 0.05}}
-                 className="text-white hover:text-white transition-colors"
+                 className="text-white hover:size-3 transition-colors"
                  aria-label={link.label}
 
                   >
