@@ -233,7 +233,7 @@ export default function GithubActivityMap({ username = "Suthar345Piyush" , total
             <div className="mb-4 flex items-center justify-between">
               <div>
 
-                <h2 className="font-mono text-sm font-medium tracking-widest text-[#8b949e] uppercase">
+                <h2 className="font-mono text-sm font-medium tracking-widest text-[#8b949e]">
                   Github Activity
                 </h2>
 
