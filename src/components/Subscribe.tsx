@@ -53,7 +53,7 @@ export default function Subscribe() {
             <p className="text-white mb-6">subscribe to my email list/.</p>
 
 
-            <form onSubmit={handleSubmit} className="flex gap-3 max-w-md">
+            <form onSubmit={handleSubmit} className="flex flex-row sm:flex-row gap-3 max-w-md">
 
                <input 
                type="email" 
@@ -62,7 +62,7 @@ export default function Subscribe() {
                placeholder="Enter your email" className="flex-1 px-4 py-3 bg-transparent border border-gray-800 rounded-lg focus:outline-none focus:border-gray-600 transition-colors text-white placeholder:text-gray-600" 
                disabled={status === 'loading'}/>
 
-               <button type="submit" disabled={status === "loading"} className="bg-white cursor-pointer rounded-xl text-black font-bold px-3 py-4">
+               <button type="submit" disabled={status === "loading"} className="bg-white cursor-pointer rounded-xl text-black hover:bg-gray-300 font-bold px-3 py-4 w-full sm:w-auto">
 
                 {status === 'loading' ? "..." : status === 'success' ? "✓" : "Subscribe"}
 
