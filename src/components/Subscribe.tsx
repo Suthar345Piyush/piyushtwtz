@@ -62,7 +62,7 @@ export default function Subscribe() {
                placeholder="Enter your email" className="flex-1 px-4 py-3 bg-transparent border border-gray-800 rounded-lg focus:outline-none focus:border-gray-600 transition-colors text-white placeholder:text-gray-600" 
                disabled={status === 'loading'}/>
 
-               <button type="submit" disabled={status === "loading"} className="bg-gray-800 cursor-pointer rounded-xl text-white px-3 py-4">
+               <button type="submit" disabled={status === "loading"} className="bg-white cursor-pointer rounded-xl text-black font-bold px-3 py-4">
 
                 {status === 'loading' ? "..." : status === 'success' ? "✓" : "Subscribe"}
 

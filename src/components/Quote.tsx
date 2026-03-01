@@ -13,7 +13,7 @@ export default function Quote() {
        }} transition={{duration : 0.5 , delay : 0.1}} className="mb-16">
 
          <h1 className="text-3xl font-bold mb-2 text-white">
-         Quote that force me to work more/.
+         quote that inspire me to work more/.
          </h1>
 
          <div className="space-y-4 text-white leading-relaxed">
