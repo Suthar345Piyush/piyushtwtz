@@ -35,7 +35,7 @@ export default function Footer() {
 
           <div className="text-center mb-6">
 
-            <p className="text-white mb-2">want to hire me , just drop a mail/.</p>
+            <p className="text-white mb-2">want to hire, just drop a mail/.</p>
 
             <a target="_blank" rel="noopener noreferrer" className="text-white transition-colors underline font-bold">piyushsuthar524@gmail.com</a>
 
