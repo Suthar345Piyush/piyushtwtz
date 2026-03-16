@@ -37,7 +37,7 @@ export default function Projects() {
 
                    <div className="flex items-start justify-between mb-3">
 
-                    <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors">
+                    <h3 className="text-xl font-semibold text-white group-hover:text-white transition-colors mt-1.5">
 
                        {project.title}
  

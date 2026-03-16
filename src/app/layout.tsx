@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
-
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import {JetBrains_Mono} from "next/font/google";
+
+const jetbrainsMono = JetBrains_Mono({
+   subsets : ["latin"],
+   weight : ["400" , "500" , "600" , "700"],
+   variable : "--font-jetbrains-mono",
+});
+
 
 export const metadata: Metadata = {
   title: "Piyush Suthar - Portfolio",
@@ -17,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="antialiased">
+      <body className={`${jetbrainsMono.variable} font-mono antialiased`}>
         <ThemeProvider>
           {children}
         </ThemeProvider>

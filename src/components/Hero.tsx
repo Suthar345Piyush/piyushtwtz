@@ -26,17 +26,11 @@ export default function Hero() {
 
                <div className='w-32 h-32 md:w-40 md:h-40 rounded-full  overflow-hidden ring-4 ring-gray-800 dark:ring-black shadow-xl bg-linear-to-br from blue-500 to purple-600'>
 
-                  <Image src="/images/ownphoto.jpg" alt="Profile" width={160} height={160} className='object-cover w-full h-full' priority/>
+               <Image src="/images/ownphoto.jpg" alt="Profile" width={160} height={160} className='object-cover w-full h-full  align-bottom' priority/>
 
-
-
-                   
                </div>
 
-              
             </motion.div>
-             
-
 
          </div>
 

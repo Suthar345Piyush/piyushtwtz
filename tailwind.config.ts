@@ -14,7 +14,8 @@ const config: Config = {
         foreground: "#ffffff",
       },
       fontFamily: {
-        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
+        mono: ['var(--font-jetbrains-mono)' , 'monospace'],
+        sans: ['var(--font-jetbrains-mono)' , 'monospace'],
       },
     },
   },
