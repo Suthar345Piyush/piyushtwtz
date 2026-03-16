@@ -17,7 +17,7 @@ export default function About() {
           </h2>
 
           <div className='space-y-4 text-white leading-relaxed'>
-             <p>Learnt by doing things and by implementing , love to build web & mobile apps</p>
+             <p>learnt by doing things and by implementing , love to build web & mobile apps</p>
 
              <p>i like general tech , space tech , physics and science. they make everything possible in this universe</p>
 
