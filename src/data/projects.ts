@@ -58,19 +58,19 @@ export const projects : Project[] = [
   {
     id : 5,
     title : "collider",
-    description : "a fun physics based project , where you can make collisions b/w particles and study their related metrics , developed for physics geeks",
+    description : "a fun physics project , where you can make collisions b/w particles and study their related metrics , developed for physics geeks",
     tech : ["reactjs" , "typescript" , "tailwindcss" , "recharts" , "canvasapi"],
     github : "https://github.com/Suthar345Piyush/collider",
     image : colliderimage,
     live : "https://collider-app.vercel.app/",
-    date : "2025"
+    date : "2026"
   },
 
 
   {
     id : 6,
     title : "secureChat",
-    description : "a very secure chat app with room time limit of 10 mins , room will automatically closed after 10 mins and all chat are permanently cleared",
+    description : "a very secure chat app with room time limit of 10 mins , room will automatically closed after 10 mins and all chat are permanently deleted from database",
     tech : ["nextjs16" , "typescript" , "upstash realtime" , "redis" , "tanstackquery" , "zod" , "elysiajs" , "tailwindcss"],
     github : "https://github.com/Suthar345Piyush/secure_chat",
     image : securechatimage,
