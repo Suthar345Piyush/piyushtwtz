@@ -1,7 +1,3 @@
-// bubble animation footer section on the page 
-
-
-
 'use client';
 
 

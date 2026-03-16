@@ -10,6 +10,7 @@ import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer";
 import Quote from "@/components/Quote";
 import GithubActivityMap from "@/components/GithubActivityMap";
+import ResumeLink from "@/components/ResumeLink";
 
 
 
@@ -31,6 +32,7 @@ export default function Home() {
             <Education />
             <Subscribe />
             <Skills />
+            <ResumeLink />
             <Footer />
 
           </div>
