@@ -18,9 +18,9 @@ export default function Quote() {
 
          <div className="space-y-4 text-white leading-relaxed">
            <p className="font-sans">
-            I don't care that they stole my idea , i care that they don't have any of their own.
+           𝙸 𝚍𝚘𝚗'𝚝 𝚌𝚊𝚛𝚎 𝚝𝚑𝚊𝚝 𝚝𝚑𝚎𝚢 𝚜𝚝𝚘𝚕𝚎 𝚖𝚢 𝚒𝚍𝚎𝚊, 𝙸 𝚌𝚊𝚛𝚎 𝚝𝚑𝚊𝚝 𝚝𝚑𝚎𝚢 𝚍𝚘𝚗'𝚝 𝚑𝚊𝚟𝚎 𝚊𝚗𝚢 𝚘𝚏 𝚝𝚑𝚎𝚒𝚛 𝚘𝚠𝚗.
            </p>
-           <h1 className="font-sans items-stretch place-self-end pr-36 text-white">~ Nikola Tesla</h1>
+           <h1 className="font-sans items-stretch place-self-end pr-36 text-white">~ 𝙽𝚒𝚔𝚘𝚕𝚊 𝚝𝚎𝚜𝚕𝚊</h1>
          </div>
 
        </motion.section>
