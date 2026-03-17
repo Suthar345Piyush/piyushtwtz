@@ -14,7 +14,7 @@ export default function Skills() {
 
          <motion.section initial={{opacity : 0 , y : 20}} animate = {{opacity : 1 , y : 0}} transition={{duration : 0.5 , delay : 0.5}} className="mb-16">
 
-            <h2 className="text-3xl font-bold mb-6 text-white">tech stack , i mostly work on/.</h2>
+            <h2 className="text-3xl font-bold mb-6 text-white">tech stack, i mostly work on/.</h2>
 
               <div className="flex flex-wrap gap-3">
                 {

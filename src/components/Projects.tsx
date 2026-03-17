@@ -42,7 +42,7 @@ export default function Projects() {
                        {project.title}
  
                     </h3>
-                    <span className="text-xs text-white">{project.date}</span>
+                    <span className="text-xs text-white mt-2">{project.date}</span>
                     </div>
 
                     <p className="text-white text-sm mb-4 leading-relaxed">{project.description}</p>
@@ -73,7 +73,7 @@ export default function Projects() {
                   {
                    project.github && (
 
-                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white transition-colors items-center gap-2 text-sm">
+                     <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors items-center gap-2 text-sm">
                        
                         <FiGithub size={16}/>Code
 
@@ -84,7 +84,7 @@ export default function Projects() {
                   {
                     project.live && (
                         
-                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-white hover:text-white transition-colors items-center gap-2 text-sm">
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-white hover:text-green-400 transition-colors items-center gap-2 text-sm">
 
                         <FiExternalLink size={16}/>
                         Live Demo
