@@ -18,7 +18,7 @@ export default function Footer() {
       {icon : FiGithub , href : "https://github.com/Suthar345Piyush" , label : "Github"},
       {icon : FiLinkedin , href : "https://www.linkedin.com/in/piyush-suthar-641a0826a/" , label : "Linkedin"},
       {icon : FaXTwitter , href : "https://x.com/piyushtwtz" , label : "X"},
-      {icon : FiMail , href : "mailto:piyushsuthar524@gmail.com" , label : "Email"}
+      {icon : FiMail , href : "piyushsuthar524@gmail.com" , label : "Email"}
       
    ];
 
