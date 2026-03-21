@@ -3,6 +3,8 @@
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import { useState } from 'react';
+import { ScrambleText } from "@/components/scramble-text"
+import { AnimatedTextSlider } from "@/components/animated-text-slider"
 
 export default function Hero() {
 
@@ -27,7 +29,7 @@ export default function Hero() {
 
           <div
             onClick={() => setIsSwapped(prev => !prev)}
-            className='relative w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-4 ring-gray-800 dark:ring-black shadow-xl hover:scale-105 active:scale-95 transition-transform duration-300 cursor-pointer'
+            className='relative w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full overflow-hidden ring-4 ring-gray-800 dark:ring-black shadow-xl hover:scale-100 active:scale-95 transition-transform duration-100 cursor-pointer'
           >
             <Image
               src="/images/ownphoto.jpg"
@@ -50,12 +52,20 @@ export default function Hero() {
 
        
         <div className='flex flex-col items-center sm:items-start text-center sm:text-left gap-3 pt-0 sm:pt-2'>
-          <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight'>
-            hi, i'm piyush/.
-          </h1>
-          <span className='text-gray-300 text-sm sm:text-base'>
+         
+
+          <ScrambleText text="hi, i'm piyush/." className='cursor-pointer text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight' />
+
+
+          {/* <span className='text-gray-300 text-sm sm:text-base'>
             full stack developer - building and learning
-          </span>
+          </span> */}
+
+              <AnimatedTextSlider 
+                texts={["fullStack developer", "software developer", "tech nerd" , "learning & building"]} 
+                className='text-gray-300 text-sm sm:text-base'/>
+
+
 
       
           <div className='inline-flex items-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-mono bg-[#111] border border-[#2a2a2a] rounded-xl mt-2'>
