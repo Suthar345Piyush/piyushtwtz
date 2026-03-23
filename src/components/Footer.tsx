@@ -1,81 +1,65 @@
 'use client';
 
-
-import {motion} from "framer-motion";
-import { FiGithub , FiLinkedin , FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
-import {  BiHomeAlt } from "react-icons/bi";
+import { BiHomeAlt } from "react-icons/bi";
+import { FloatingToolbar } from "@/components/floating-toolbar";
 
 
 
 export default function Footer() {
 
-   const socialLinks = [
 
-      {icon : BiHomeAlt , href : "#" , label : "Home"},
-      {icon : SiLeetcode , href : "https://leetcode.com/u/Piyush124Suthar/" , label : "LeetCode"},
-      {icon : FiGithub , href : "https://github.com/Suthar345Piyush" , label : "Github"},
-      {icon : FiLinkedin , href : "https://www.linkedin.com/in/piyush-suthar-641a0826a/" , label : "Linkedin"},
-      {icon : FaXTwitter , href : "https://x.com/piyushtwtz" , label : "X"},
-      {icon : FiMail , href : "piyushsuthar524@gmail.com" , label : "Email"}
-      
-   ];
+  const socialLinks = [
+    { id: "home",     label: "Home",     icon: <BiHomeAlt size={18} />,   href: "/" , shortcut : "H" },
+    { id: "leetcode", label: "LeetCode", icon: <SiLeetcode size={18} />,  href: "https://leetcode.com/u/Piyush124Suthar/" , shortcut : "L" },
+    { id: "github",   label: "GitHub",   icon: <FiGithub size={18} />,    href: "https://github.com/Suthar345Piyush" , shortcut : "G" },
+    { id: "linkedin", label: "LinkedIn", icon: <FiLinkedin size={18} />,  href: "https://www.linkedin.com/in/piyush-suthar-641a0826a/" , shortcut : "L" },
+    { id: "twitter",  label: "X",        icon: <FaXTwitter size={18} />,  href: "https://x.com/piyushtwtz" , shortcut : "T" },
+    { id: "email",    label: "Email",    icon: <FiMail size={18} />,      href: "mailto:piyushsuthar524@gmail.com" , shortcut : "E" },
+  ];
 
 
-   return (
-       
-       <motion.footer initial={{opacity : 0}} animate={{opacity : 1}} transition={{duration : 0.5 , delay : 0.7}}
-         className="py-8 border-t border-gray-800"
+// for selecting the email 
+
+  const handleSelect = (id: string) => {
+    const link = socialLinks.find((l) => l.id === id);
+    if (!link) return;
+
+    if (id === "email") {
+      window.location.href = link.href;
+    } else {
+      window.open(link.href, id === "home" ? "_self" : "_blank", "noopener noreferrer");
+    }
+  };
+
+
+
+  return (
+    <motion.footer
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.7 }}
+      className="py-8 border-t border-gray-800"
+    >
+      <div className="text-center mb-6">
+        <p className="text-white mb-2">want to hire, just drop a mail/.</p>
+        <a
+          href="mailto:piyushsuthar524@gmail.com"
+          className="text-white transition-colors font-bold"
         >
+          piyushsuthar524@gmail.com
+        </a>
+      </div>
 
-          <div className="text-center mb-6">
+ 
+      <div className="flex items-center justify-center mt-8">
 
-            <p className="text-white mb-2">want to hire, just drop a mail/.</p>
+        <FloatingToolbar items={socialLinks} onSelect={handleSelect} />
 
-            <a target="_blank" rel="noopener noreferrer" className="text-white transition-colors  font-bold">piyushsuthar524@gmail.com</a>
-
-
-          </div>
-
-
-
-          <div className="flex flex-row items-center gap-5 justify-center mt-5">
-
-            {socialLinks.map((link , index) => (
-
-                 <motion.a
-
-                 key={link.label} 
-                 href={link.href} 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 initial={{opacity : 0 , y : 0}} 
-                 animate={{opacity : 1 , y : 0}} 
-                 transition={{duration : 0.3 ,  delay : 0.8 + index * 0.05}}
-                 className="text-white hover:size-3 transition-colors"
-                 aria-label={link.label}
-
-                  >
-
-                    <link.icon size={25}/>
-
-                 </motion.a>
-
-
-            ))}
-             
-          </div>
-
-
-       </motion.footer>
-
-     
-   )
-
-
-
-   
-   
+      </div>
+    </motion.footer>
+  );
 }
-
