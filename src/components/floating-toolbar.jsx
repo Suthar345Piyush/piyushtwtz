@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const FloatingToolbar = ({ 
-  items = [], 
+  items, 
   className = "",
   onSelect
 }) => {
