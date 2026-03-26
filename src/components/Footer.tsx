@@ -17,7 +17,7 @@ export default function Footer() {
     { id: "leetcode", label: "LeetCode", icon: <SiLeetcode size={18} />,  href: "https://leetcode.com/u/Piyush124Suthar/" , shortcut : "L" },
     { id: "github",   label: "GitHub",   icon: <FiGithub size={18} />,    href: "https://github.com/Suthar345Piyush" , shortcut : "G" },
     { id: "linkedin", label: "LinkedIn", icon: <FiLinkedin size={18} />,  href: "https://www.linkedin.com/in/piyush-suthar-641a0826a/" , shortcut : "L" },
-    { id: "twitter",  label: "X",        icon: <FaXTwitter size={18} />,  href: "https://x.com/piyushtwtz" , shortcut : "T" },
+    { id: "twitter",  label: "X",        icon: <FaXTwitter size={18} />,  href: "https://x.com/piyushtwtz" , shortcut : "X" },
     { id: "email",    label: "Email",    icon: <FiMail size={18} />,      href: "mailto:piyushsuthar524@gmail.com" , shortcut : "E" },
   ];
 
