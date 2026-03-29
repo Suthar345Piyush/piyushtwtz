@@ -45,7 +45,7 @@ export default function Footer() {
       className="py-8 border-t border-gray-800"
     >
       <div className="text-center mb-6">
-        <p className="text-white mb-2">want to hire, just drop a mail/.</p>
+        <p className="text-white mb-2">open for work/.</p>
         <a
           href="mailto:piyushsuthar524@gmail.com"
           className="text-white transition-colors font-bold"
