@@ -31,7 +31,7 @@ export default function Projects() {
 
                    <div>
 
-                   <Image src={project.image} alt="ProjectImage" width={50} height={35} className="object-cover w-96 h-56 rounded-xl" priority/>
+                   <Image src={project.image} alt="ProjectImage" width={400} height={250} className="object-cover rounded-xl w-full h-48" priority/>
 
                    </div>
 
