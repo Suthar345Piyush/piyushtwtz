@@ -2,7 +2,7 @@
 
 import { Project } from "@/types";
 import gifhubimage from "../../public/images/gifhub.png";
-import chessimage from "../../public/images/chessimage.png";
+import invoiceflowimage from "../../public/images/invoiceflowimage.jpg";
 import colliderimage from "../../public/images/colliderimage.png";
 import taskifyimage from "../../public/images/taskifyimage.png";
 import ezyqimage from "../../public/images/ezyqimage.png";
@@ -12,13 +12,13 @@ export const projects : Project[] = [
 
    {
      id : 1,
-     title : "Gifhub",
-     description : "a frontend gif's website built using giphy api",
-     tech : ["reactjs" , "javascript" , "react-router-dom" , "tailwindcss" , "giphy api"],
-     github : "https://github.com/Suthar345Piyush/GIFHub-Gifs-App",
-     image : gifhubimage,
-     live : "https://gif-hub-gifs-app.vercel.app/",
-     date : "2024"
+     title : "Invoiceflow",
+     description : "professional invoices service for freelancers and small businesses",
+     tech : ["nextjs" , "typescript" , "supabase" , "pdfshift" , "tailwindcss", "zustand", "zod", "resend", "lucide-icons", "oauth"],
+     github : "https://github.com/Suthar345Piyush/invoiceflow",
+     image : invoiceflowimage,
+     live : "https://invoiceflow-six.vercel.app/",
+     date : "2026"
    },
 
 
@@ -43,15 +43,17 @@ export const projects : Project[] = [
   },
 
 
+
+
   {
     id : 4,
-    title : "chess-backend",
-    description : "developed robust backend of chess game , used websockets for real-time player sync",
-    tech : ["nodejs" , "expressjs" , "socketio" , "vanilla css"],
-    github : "https://github.com/Suthar345Piyush/Chess-Backend",
-    image : chessimage,
-    live : "https://chess-backend-4spp.onrender.com/",
-    date : "2025"
+    title : "Gifhub",
+    description : "a frontend gif's website built using giphy api",
+    tech : ["reactjs" , "javascript" , "react-router-dom" , "tailwindcss" , "giphy api"],
+    github : "https://github.com/Suthar345Piyush/GIFHub-Gifs-App",
+    image : gifhubimage,
+    live : "https://gif-hub-gifs-app.vercel.app/",
+    date : "2024"
   },
 
 
