@@ -17,7 +17,7 @@ export const projects : Project[] = [
      tech : ["nextjs" , "typescript" , "supabase" , "pdfshift" , "tailwindcss", "zustand", "zod", "resend", "lucide-icons", "oauth"],
      github : "https://github.com/Suthar345Piyush/invoiceflow",
      image : invoiceflowimage,
-     live : "https://invoiceflow-six.vercel.app/",
+     live : "https://invoiceflow.co.in/",
      date : "2026"
    },
 
