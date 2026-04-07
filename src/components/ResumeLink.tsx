@@ -17,7 +17,7 @@ export default function ResumeLink() {
         <button className="bg-white cursor-pointer rounded-xl text-black hover:bg-gray-300 font-bold  w-28 h-10">
            
 
-           <a href="https://newresume.linkyhost.com/">📄resume</a>
+           <a href="https://green-bush-462.linkyhost.com">📄resume</a>
 
 
         </button>
