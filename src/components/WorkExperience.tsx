@@ -19,7 +19,7 @@ export default function WorkExperience  ()  {
      >
 
        <h2 className="text-3xl font-bold mb-6 text-white">
-        cool place i worked at/.
+        work/.
        </h2>
 
        <div className="space-y-6">

@@ -28,7 +28,7 @@ export default function Subscribe() {
       initial={{ opacity: 0, y: 20 }}  
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.6 }}
-      className="mb-16 px-5 sm:px-6"   
+      className="mb-16 mt-16 px-5 sm:px-6" 
     >
       <h2 className="text-3xl sm:text-3xl font-bold mb-2  text-white">
         stay updated/.

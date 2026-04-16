@@ -54,7 +54,7 @@ export default function Hero() {
         <div className='flex flex-col items-center sm:items-start text-center sm:text-left gap-3 pt-0 sm:pt-2'>
          
 
-          <ScrambleText text="hi, i'm piyush/." className='cursor-pointer text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight' />
+          <ScrambleText text="hi,i'm piyush/." className='cursor-pointer text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight' />
 
 
           {/* <span className='text-gray-300 text-sm sm:text-base'>
@@ -69,7 +69,7 @@ export default function Hero() {
 
       
           <div className='inline-flex items-center gap-2 px-3 sm:px-4 py-2 text-xs sm:text-sm font-mono bg-[#111] border border-[#2a2a2a] rounded-xl mt-2'>
-            <span className='w-2 h-2 shrink-0 rounded-full bg-green-600 shadow-[0_0_8px_#22c55e] animate-pulse' />
+            <span className='w-2 h-2 shrink-0 rounded-full bg-green-400 shadow-[0_0_8px_#22c55e] animate-pulse' />
             <p className='text-[#e5e5e5] font-semibold tracking-tight m-0'>
               <span className='hidden sm:inline'>available - open to freelance projects and SDE roles</span>
               <span className='sm:hidden'>available - open to freelance projects and SDE roles</span>
