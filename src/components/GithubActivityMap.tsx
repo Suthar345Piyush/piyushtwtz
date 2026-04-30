@@ -227,18 +227,18 @@ export default function GithubActivityMap({ username = "Suthar345Piyush" , total
 
 
 
-          <motion.div initial={{opacity : 0 , y : 20}} animate={{opacity : 1 , y :0}} transition={{duration : 0.5 , ease : "easeOut"}} className="w-full max-w-4xl rounded-2xl border border-[#21262d] bg-[#0d1117] p-6 shadow-2xl">
+          <motion.div initial={{opacity : 0 , y : 20}} animate={{opacity : 1 , y :0}} transition={{duration : 0.5 , ease : "easeOut"}} className="w-full max-w-4xl rounded-2xl border border-gray-200 dark:border-[#21262d] bg-white dark:bg-[#0d1117] p-6 shadow-xl dark:shadow-2xl">
 
 
             <div className="mb-4 flex items-center justify-between">
               <div>
 
-                <h2 className="font-mono text-sm font-medium tracking-widest text-[#8b949e]">
+                <h2 className="font-mono text-sm font-medium tracking-widest text-gray-500 dark:text-[#8b949e]">
                   Github Activity
                 </h2>
 
 
-                <motion.p initial={{opacity : 0}} animate={{opacity : 1}} transition={{delay : 0.4}} className="mt-1 font-mono text-xs text-[#6e7681]">
+                <motion.p initial={{opacity : 0}} animate={{opacity : 1}} transition={{delay : 0.4}} className="mt-1 font-mono text-xs text-gray-400 dark:text-[#6e7681]">
 
                   {total.toLocaleString()} contributions in the last year
 
@@ -246,7 +246,7 @@ export default function GithubActivityMap({ username = "Suthar345Piyush" , total
                  
               </div>
 
-              <a href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-1.5 rounded-lg border border-[#21262d] bg-[#161b22] px-3 py-1.5 text-xs text-[#8b949e] transition-all hover:border-[#39d353]/50 hover:text-[#39d353]">
+              <a href={`https://github.com/${username}`} target="_blank" rel="noopener noreferrer" className="group flex items-center gap-1.5 rounded-lg border border-gray-200 dark:border-[#21262d] bg-gray-50 dark:bg-[#161b22] px-3 py-1.5 text-xs text-gray-500 dark:text-[#8b949e] transition-all hover:border-green-400/50 dark:hover:border-[#39d353]/50 hover:text-green-500 dark:hover:text-[#39d353]">
 
               <svg
               viewBox="0 0 24 24"
@@ -369,7 +369,7 @@ export default function GithubActivityMap({ username = "Suthar345Piyush" , total
                 <div className="mt-3 flex items-center justify-end gap-1.5">
 
 
-                  <span className="font-mono text-[10px] text-[#8b949e]">
+                  <span className="font-mono text-[10px] text-gray-400 dark:text-[#8b949e]">
                      Less
                   </span>
 
@@ -379,9 +379,8 @@ export default function GithubActivityMap({ username = "Suthar345Piyush" , total
                      
                   ))}
 
-                  <span className="font-mono text-[10px] text-[#8b949e]">
+                  <span className="font-mono text-[10px] text-gray-400 dark:text-[#8b949e]">
                      More 
- 
                   </span>
 
 

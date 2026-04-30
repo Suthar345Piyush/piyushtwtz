@@ -8,9 +8,14 @@ interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export function ThemeProvider({ children}: ThemeProviderProps) {
+export function ThemeProvider({ children }: ThemeProviderProps) {
   return (
-    <NextThemesProvider attribute="class" defaultTheme="light" enableSystem={false}>
+    <NextThemesProvider
+      attribute="class"
+      defaultTheme="dark"
+      enableSystem={true}
+      disableTransitionOnChange={false}
+    >
       {children}
     </NextThemesProvider>
   );

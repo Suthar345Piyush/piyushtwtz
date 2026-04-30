@@ -1,72 +1,60 @@
-// work experience section here 
+// work experience section here
 
 'use client';
 
-
-
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { workExperience } from "@/data/work";
 import Image from "next/image";
 
-
-
-export default function WorkExperience  ()  {
-
+export default function WorkExperience() {
   return (
-   
-     <motion.section initial={{opacity : 0 , y : "20"}} animate={{opacity : 1 , y : 0}}
-      transition={{duration : 0.5 , delay : 0.2}} className="mb-16"
-     >
-
-       <h2 className="text-3xl font-bold mb-6 text-white">
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+      className="mb-16"
+    >
+      <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
         work/.
-       </h2>
+      </h2>
 
-       <div className="space-y-6">
-
-         {workExperience.map((exp , index) => (
-
-          <motion.div key={exp.id} initial={{opacity : 0, x : -20}} animate={{opacity : 1 , x : 0}} transition={{duration : 0.3 , delay : 0.3 + index * 0.1}} className="flex items-center justify-between group">
-
-
+      <div className="space-y-6">
+        {workExperience.map((exp, index) => (
+          <motion.div
+            key={exp.id}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
+            className="flex items-center justify-between group"
+          >
             <div className="flex items-center gap-4">
-
-              <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-xl font-bold text-white">
-                
-                  <Image src={exp.logo} alt="CompanyImage" width={50} height={50} className="object-cover rounded-full w-full" priority/>
-
+              <div className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-xl font-bold overflow-hidden">
+                <Image
+                  src={exp.logo}
+                  alt="CompanyImage"
+                  width={50}
+                  height={50}
+                  className="object-cover rounded-full w-full"
+                  priority
+                />
               </div>
-
 
               <div>
-                   <h3 className="font-semibold text-white group hover:text-white transition-colors">{exp.company}</h3>
-
-             <p className="text-sm text-white">
-                 {exp.position} | {exp.type}
-                  </p>
+                <h3 className="font-semibold text-gray-900 dark:text-white group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors">
+                  {exp.company}
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {exp.position} | {exp.type}
+                </p>
               </div>
-
             </div>
 
-
-            <div className="text-right text-sm text-white">
+            <div className="text-right text-sm text-gray-500 dark:text-gray-400">
               {exp.startDate} - {exp.endDate}
             </div>
-
-          
-
           </motion.div>
-
-
-         ))}
-         
-       </div>
-
-
-
-
-     </motion.section>
-
-  )
-
+        ))}
+      </div>
+    </motion.section>
+  );
 }
