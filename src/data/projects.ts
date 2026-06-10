@@ -4,7 +4,7 @@ import { Project } from "@/types";
 import gifhubimage from "../../public/images/gifhub.png";
 import invoiceflowimage from "../../public/images/invoiceflowimage.jpg";
 import colliderimage from "../../public/images/colliderimage.png";
-import taskifyimage from "../../public/images/taskifyimage.png";
+import createfastcliimage from "../../public/images/createfastcliimage.jpg"
 import ezyqimage from "../../public/images/ezyqimage.png";
 import securechatimage from "../../public/images/securechatimage.png";
 
@@ -24,12 +24,12 @@ export const projects : Project[] = [
 
    {
     id : 2,
-    title : "Taskify",
-    description : "a todo mobile app",
-    tech : ["react native" , "typescript" ,  "expo" , "convex" , "sentry" , "vanilla css"],
-    github : "https://github.com/Suthar345Piyush/Taskify",
-    image : taskifyimage,
-    date : "2025"
+    title : "Create-fast-cli",
+    description : "⚡ Scaffold production-ready Go CLI projects in seconds",
+    tech : ["go" , "cobra" ,  "viper" , "uber-zap" , "bubbletea" , "testify", "huh", "lipgloss"],
+    github : "https://github.com/Suthar345Piyush/create-fast-cli",
+    image : createfastcliimage,
+    date : "2026"
   },
 
   {
@@ -41,9 +41,6 @@ export const projects : Project[] = [
     image : ezyqimage,
     date : "2026"
   },
-
-
-
 
   {
     id : 4,
