@@ -12,6 +12,8 @@ export const skills : string[] = [
    "sqlite",
    "mysql",
    "golang",
+   "python",
+   "postgresQL",
    "mern",
    "tailwindcss",
    "tamagui",

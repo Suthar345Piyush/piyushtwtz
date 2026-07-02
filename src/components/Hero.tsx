@@ -55,7 +55,7 @@ export default function Hero() {
           />
 
           <AnimatedTextSlider
-            texts={["fullStack developer", "software developer", "tech nerd", "learning & building"]}
+            texts={["fullStack developer", "software developer", "backend developer", "building stuff"]}
             className='text-gray-500 dark:text-gray-400 text-sm sm:text-base'
           />
 
