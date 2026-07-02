@@ -13,7 +13,7 @@ export default function ResumeLink() {
       <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">resume/.</h2>
 
       <a
-        href="https://drive.google.com/file/d/1_wIm6NKyGgy8ZLs8CO6EYMbLN5C0wJD3/view?usp=drive_link"
+        href="https://drive.google.com/file/d/1wzFzENDTZacIxlE-7AQnO8EeV_HKgj8U/view?usp=drive_link"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl text-sm font-bold cursor-pointer transition-all duration-200 bg-gray-900 dark:bg-white text-white dark:text-black hover:bg-gray-700 dark:hover:bg-gray-200 active:scale-95"

@@ -14,7 +14,7 @@ export default function Skills() {
       className="mb-16"
     >
       <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
-        tech stack, i mostly work on/.
+        tech stack/.
       </h2>
 
       <div className="flex flex-wrap gap-3">

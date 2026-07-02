@@ -11,7 +11,7 @@ export const workExperience : WorkExperience[] = [
     position : "full stack engineer",
     type : "intern",
     startDate : "feb 2026",
-    endDate : "present",
+    endDate : "June 2026",
     logo :   "/images/inrealphoto.jpg",
    },
 
@@ -22,7 +22,7 @@ export const workExperience : WorkExperience[] = [
       position : "open source contributer",
       type : "part-time",
       startDate : "october 2025",
-      endDate : "october 2025",
+      endDate: "",
       logo : "/images/hacktoberfestlogo.jpg",
      }
 ];
